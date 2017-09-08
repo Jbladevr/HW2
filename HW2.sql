@@ -64,4 +64,8 @@ SELECT name
 FROM countries 
 WHERE population > 35000000;
 
-SELECT border                                                                                                                             FROM countries                                                                                                                                   INNER JOIN borders                                                                                                                               ON borders.border = countries.name                                                                                                               WHERE borders.name = 'Germany' AND population > 35000000;
+SELECT border
+FROM countries
+INNER JOIN borders
+ON borders.border = countries.name
+WHERE borders.name = 'Germany' AND population > 35000000;
