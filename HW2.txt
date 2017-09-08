@@ -167,7 +167,11 @@ WHERE population > 35000000;
 4e Using the query to display all countries that border Germany 
 AND have population over 35 million.
 ----------------------------------------------------------------
-SELECT border                                                                                                                             FROM countries                                                                                                                                   INNER JOIN borders                                                                                                                               ON borders.border = countries.name                                                                                                               WHERE borders.name = 'Germany' AND population > 35000000;
+SELECT border
+FROM countries
+INNER JOIN borders
+ON borders.border = countries.name
+WHERE borders.name = 'Germany' AND population > 35000000;
 * border 
 *--------
 * Poland
